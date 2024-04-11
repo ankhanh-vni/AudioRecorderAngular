@@ -1,0 +1,26 @@
+header {
+  background-color: #457aaf;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  padding: 5px;
+}
+nav ul li a {
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: #b7d7f7;
+  border-radius: 10px;
+}

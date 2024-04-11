@@ -1,0 +1,7 @@
+<input type="file" accept="audio/*" (change)="onFileSelected($event)">
+<button class="upload-audio" (click)="uploadAudio()">Upload</button>
+<div *ngIf="fileUploaded">
+    <h3 style="text-align: center;">Summary</h3>
+    <p>{{ transcript }}</p>
+</div>
+  <button *ngIf="transcriptFetched" (click)="summarizeAgain()">Get Transcript summary</button>
