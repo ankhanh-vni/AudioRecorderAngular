@@ -1,0 +1,20 @@
+  <div class="row justify-content-center pt-2 pb-2">
+    <button
+      title="Click here to start recording action"
+      class="btn-mic"
+      (click)="startRecording()"
+      *ngIf="!isRecording"
+    >
+      <img src="../../assets/mic.png" />
+    </button>
+    <button
+      title="Click here to stop recording"
+      class="btn-stop"
+      (click)="stopRecording()"
+      *ngIf="isRecording"
+    >
+      <img src="../../assets/stop.png" />
+    </button>
+    </div>
+    <audio *ngIf="recordingStopped" #audioPlayer controls style="display: block; margin: 10px auto;"></audio>
+

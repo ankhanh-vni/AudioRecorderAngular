@@ -18,7 +18,7 @@
     >
       <img src="../../assets/stop.png" />
     </button>
-  </div>
+    </div>
   <audio *ngIf="recordingStopped" #audioPlayer controls style="margin: 10px"></audio>
   <button *ngIf="audioURL && recordingStopped" [disabled]="transcriptFetched" (click)="uploadAudio()">Get Transcript summary</button>
   <div *ngIf="audioURL && recordingStopped">

@@ -1,0 +1,10 @@
+.btn-mic,
+.btn-stop {
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
