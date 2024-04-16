@@ -61,18 +61,9 @@ export class HomeComponent implements OnInit {
         });
     }
   }
-  summarizeTranscript() {
-    this.http
-      .post('http://localhost:5000/summarize', { text: this.transcript })
-      .subscribe((response: any) => {
-        this.summary = response.summary;
-        console.log(this.summary);
-        this.cd.detectChanges();
-      });
-  }
 
-  summarizeAgain() {
-    
+  summarize() {
+
     this.http
       .post('http://localhost:5000/summarize', { text: this.transcript })
       .subscribe((response: any) => {

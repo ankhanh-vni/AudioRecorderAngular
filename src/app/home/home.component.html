@@ -25,7 +25,7 @@
     <h3 style="text-align: center;">Summary</h3>
     <p>{{ transcript }}</p>
   </div>
-  <button *ngIf="transcriptFetched" (click)="summarizeAgain()">Get Transcript summary</button>
+  <button *ngIf="transcriptFetched" (click)="summarize()">Summarize Again</button>
 
 
   <!-- <button *ngIf="transcript" [disabled]="!transcriptFetched" (click)="summarizeTranscript()">Summarize Transcript</button>
